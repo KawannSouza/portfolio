@@ -95,6 +95,37 @@ span {
     width: 7%;
 }
 
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 1rem;
+    background: var(--blue-color1);
+    color: var(--white-color);
+}
+
+.contact div {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact div i {
+    font-size: 20pt;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact div i:hover {
+    font-size: 23pt;
+}
+
+.contact p {
+    font-weight: 600;
+}
+
 @media (max-width: 480px) {
     .nav-list {
         display: none;
