@@ -1,0 +1,80 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.about h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-color1);
+    max-width: 11%;
+    padding: 0.3rem;
+    color: var(--white-color);
+    border-radius: 0.4rem;
+}
+
+.about p {
+    width: 50%;
+    text-align: justify;
+}
+
+.about-infos {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.progress-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 50%;
+}
+
+.progress {
+    width: 50%;
+    height: 1rem;
+    background: rgb(236, 236, 236);
+    border-radius: 0.4rem;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 0.4rem;
+    background: var(--blue-color2);
+    height: 1rem;
+    font-size: 7pt;
+    padding: 0.4rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .about-infos {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about p {
+        text-align: center;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .progress-area {
+        width: 100%;
+    }
+
+    .progress {
+        width: 100%;
+    }
+    .about h2 {
+        max-width: 70%;
+    }
+}
