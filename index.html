@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Kawann Marcelo</title>
 </head>
 <body>
@@ -15,23 +18,32 @@
         <nav class="nav-bar">
             <span class="name-logo">KAWANN</span>
             <ul class="nav-list">
+                <li class="nav-list-item active"><a href="">Home</a></li>
+                <li class="nav-list-item"><a href="">About</a></li>
+                <li class="nav-list-item"><a href="">Projects</a></li>
+                <li class="nav-list-item"><a href="">Contact</a></li>
+            </ul>
+            <button class="btn-nav"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div id="mobile-menu">
+            <ul class="nav-list-mobile">
                 <li class="nav-list-item">Home</li>
                 <li class="nav-list-item">About</li>
                 <li class="nav-list-item">Projects</li>
                 <li class="nav-list-item">Contact</li>
             </ul>
-        </nav>
+        </div>
     </header>
     <div class="main">
-        <div class="home">
+        <section class="home">
             <div class="infos">
                 <p class="saludation">HELLO</p>
                 <p class="me">I'm Kawann <br> Marcelo</p>
                 <p class="function">Fullstack Developer</p>
             </div>
             <img class="me-image" src="/assets/images/me-image.png" alt="me-image">
-        </div>
-        <div class="technologies">
+        </section>
+        <section class="technologies">
             <h2>Technologies</h2>
             <div class="logos">
                     <img class="logo" src="assets/logos/javascript.svg" alt="javascript">
@@ -44,8 +56,8 @@
                     <img class="logo" src="assets/logos/postregree.svg" alt="postgresql">
 
             </div>
-        </div>
-        <div class="about">
+        </section>
+        <section class="about">
             <h2>About me</h2>
             <div class="about-infos">
                 <p>
@@ -80,10 +92,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <div class="projects-title"><h2>Projects</h2></div>
-    <div class="projects">
+    <section class="projects">
         <div class="custom-card">
             <div class="img-box">
                 <img src="assets/images/portifolio.png" alt="">
@@ -91,9 +103,10 @@
             <div class="custom-content">
                 <h2>Portifólio</h2>
                 <p>
-                    Projeto de Portifólio utilizando HTML, CSS e JavaScript.
+                    Explore meu projeto de portfólio desenvolvido com HTML, CSS e JavaScript, 
+                    complementado com interações dinâmicas usando jQuery.
                 </p>
-                <a href="">Repositório</a>
+                <a href="https://github.com/KawannSouza/portfolio.git" target="_blank">Repositório</a>
             </div>
         </div>
         <div class="custom-card">
@@ -103,9 +116,11 @@
             <div class="custom-content">
                 <h2>Calculadora IMC</h2>
                 <p>
-                    Projeto de Calculadora IMC
+                    Apresento minha calculadora de IMC, criada com HTML, CSS e JavaScript. 
+                    Esta aplicação web permite que os usuários insiram seu peso e altura para 
+                    calcular seu Índice de Massa Corporal. 
                 </p>
-                <a href="">Repositório</a>
+                <a href="https://github.com/KawannSouza/imc-calculator.git" target="_blank">Repositório</a>
             </div>
         </div>
         <div class="custom-card">
@@ -115,17 +130,19 @@
             <div class="custom-content">
                 <h2>Lista de Tarefas</h2>
                 <p>
-                    Projeto de To DO list
+                    Confira meu projeto de lista de tarefas, desenvolvido com Java, Swing e MySQL. 
+                    Esta aplicação desktop permite que os usuários criem, visualizem, editem e excluam 
+                    tarefas de maneira eficiente.
                 </p>
-                <a href="">Repositório</a>
+                <a href="https://github.com/KawannSouza/to-do-list.git" target="_blank">Repositório</a>
             </div>
         </div>
-    </div>
+    </section>
     <footer class="contact">
         <div>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
+            <a href="https://www.instagram.com/kawann.ms/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/kawannmarcelo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/KawannSouza" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
         <p>&copy; Kawann Marcelo</p>
     </footer>
