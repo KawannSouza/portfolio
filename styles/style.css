@@ -77,7 +77,7 @@ span {
     justify-content: center;
     align-items: center;
     background-color: var(--blue-color1);
-    max-width: 14%;
+    max-width: 20%;
     padding: 0.3rem;
     color: var(--white-color);
     border-radius: 0.4rem;
@@ -126,7 +126,7 @@ span {
     font-weight: 600;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .nav-list {
         display: none;
     }
@@ -137,5 +137,17 @@ span {
 
     .logo {
         width: 15%;
+    }
+}
+
+@media (max-width: 930px) {
+    .technologies h2 {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .technologies h2 {
+        max-width: 50%;
     }
 }

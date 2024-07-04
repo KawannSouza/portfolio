@@ -5,7 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 100px 50px;
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 
 .custom-card {
@@ -95,7 +95,23 @@ a:hover {
     opacity: 0.8;
 }
 
-@media (max-width: 480px) {
+.projects-title {
+    width: 100%;
+    padding: 3rem;
+}
+
+.projects-title h2 {
+    max-width: 20%;
+    background: var(--blue-color1);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+}
+
+@media (max-width: 600px) {
     .custom-card {
         width: 300px;
         border-radius: 15px;
@@ -112,5 +128,17 @@ a:hover {
 
     .custom-content a {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 930px) {
+    .projects-title h2 {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-title h2 {
+        max-width: 50%;
     }
 }

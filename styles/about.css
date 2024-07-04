@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--blue-color1);
-    max-width: 11%;
+    max-width: 20%;
     padding: 0.3rem;
     color: var(--white-color);
     border-radius: 0.4rem;
@@ -36,7 +36,7 @@
 }
 
 .progress {
-    width: 50%;
+    width: 70%;
     height: 1rem;
     background: rgb(236, 236, 236);
     border-radius: 0.4rem;
@@ -54,7 +54,7 @@
     font-weight: 600;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .about-infos {
         flex-direction: column;
         align-items: center;
@@ -63,7 +63,7 @@
 
     .about p {
         text-align: center;
-        width: 90%;
+        width: 100%;
         text-align: justify;
     }
 
@@ -74,7 +74,20 @@
     .progress {
         width: 100%;
     }
+
     .about h2 {
         max-width: 70%;
+    }
+}
+
+@media (max-width: 930px) {
+    .about h2 {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about h2 {
+        max-width: 50%;
     }
 }

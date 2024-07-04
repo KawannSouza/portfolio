@@ -38,7 +38,7 @@
     border-radius: 50%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .home {
         flex-direction: column-reverse;
         gap: 1rem;
