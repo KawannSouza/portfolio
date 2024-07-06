@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/import.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/mobile.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Kawann Marcelo</title>
 </head>
 <body>
+    <!--HEADER-->
     <header>
         <nav class="nav-bar">
             <span class="name-logo">KAWANN</span>
@@ -34,7 +31,9 @@
             </ul>
         </div>
     </header>
+    <!--AREA PRINCIPAL-->
     <div class="main">
+        <!--HOME-->
         <section id="home" class="home">
             <div class="infos">
                 <p class="saludation">HELLO</p>
@@ -43,6 +42,7 @@
             </div>
             <img class="me-image" src="/assets/images/me-image.png" alt="me-image">
         </section>
+        <!--TECHNOLOGIES-->
         <section id="technologies" class="technologies">
             <h2>Technologies</h2>
             <div class="logos">
@@ -57,13 +57,16 @@
 
             </div>
         </section>
+        <!--ABOUT-->
         <section id="about" class="about">
             <h2>About me</h2>
             <div class="about-infos">
                 <p>
                     Desde a infância, sempre fui apaixonado por tecnologia, cultivando o sonho de trabalhar nesse campo. Essa motivação me faz buscar novos conhecimentos continuamente, com o objetivo de evoluir constantemente nos meus estudos. <br>
-    Atualmente estudo Ciência e Tecnologia com foco em Engenharia da Computação na Universidade Federal do Maranhão e estou focado em me tornar um desenvolvedor fullstack. No front end, estou aprimorando minhas habilidades em HTML, CSS, JavaScript e TypeScript, além de explorar frameworks como Angular e React.js. Quanto a bancos de dados, estou aprendendo a trabalhar com MySQL e PostgreSQL e no backend, estou concentrado em Java, utilizando o framework Spring.
+                    Atualmente estudo Ciência e Tecnologia com foco em Engenharia da Computação na Universidade Federal do Maranhão e estou focado em me tornar um desenvolvedor fullstack. No front end, estou aprimorando minhas habilidades em HTML, CSS, 
+                    JavaScript e TypeScript, além de explorar frameworks como Angular e React.js. Quanto a bancos de dados, estou aprendendo a trabalhar com MySQL e PostgreSQL e no backend, estou concentrado em Java, utilizando o framework Spring.
                 </p>
+                <!--GRAFICOS-->
                 <div class="progress-area">
                     <h4>Skills</h4>
                     <div class="progress">
@@ -93,51 +96,53 @@
                 </div>
             </div>
         </section>
+        <!--PROJECTS-->
+        <div id="projects" class="projects-title"><h2>Projects</h2></div>
+        <section class="projects">
+            <div class="custom-card">
+                <div class="img-box">
+                    <img src="assets/images/portifolio.png" alt="">
+                </div>
+                <div class="custom-content">
+                    <h2>Portifólio</h2>
+                    <p>
+                        Explore meu projeto de portfólio desenvolvido com HTML, CSS e JavaScript, 
+                        complementado com interações dinâmicas usando jQuery.
+                    </p>
+                    <a href="https://github.com/KawannSouza/portfolio.git" target="_blank">Repositório</a>
+                </div>
+            </div>
+            <div class="custom-card">
+                <div class="img-box">
+                    <img src="assets/images/imc-calculator.png" alt="">
+                </div>
+                <div class="custom-content">
+                    <h2>Calculadora IMC</h2>
+                    <p>
+                        Apresento minha calculadora de IMC, criada com HTML, CSS e JavaScript. 
+                        Esta aplicação web permite que os usuários insiram seu peso e altura para 
+                        calcular seu Índice de Massa Corporal. 
+                    </p>
+                    <a href="https://github.com/KawannSouza/imc-calculator.git" target="_blank">Repositório</a>
+                </div>
+            </div>
+            <div class="custom-card">
+                <div class="img-box">
+                    <img src="assets/images/lista-de-tarefas.png" alt="">
+                </div>
+                <div class="custom-content">
+                    <h2>Lista de Tarefas</h2>
+                    <p>
+                        Confira meu projeto de lista de tarefas, desenvolvido com Java, Swing e MySQL. 
+                        Esta aplicação desktop permite que os usuários criem, visualizem, editem e excluam 
+                        tarefas de maneira eficiente.
+                    </p>
+                    <a href="https://github.com/KawannSouza/to-do-list.git" target="_blank">Repositório</a>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="projects-title"><h2>Projects</h2></div>
-    <section id="projects" class="projects">
-        <div class="custom-card">
-            <div class="img-box">
-                <img src="assets/images/portifolio.png" alt="">
-            </div>
-            <div class="custom-content">
-                <h2>Portifólio</h2>
-                <p>
-                    Explore meu projeto de portfólio desenvolvido com HTML, CSS e JavaScript, 
-                    complementado com interações dinâmicas usando jQuery.
-                </p>
-                <a href="https://github.com/KawannSouza/portfolio.git" target="_blank">Repositório</a>
-            </div>
-        </div>
-        <div class="custom-card">
-            <div class="img-box">
-                <img src="assets/images/imc-calculator.png" alt="">
-            </div>
-            <div class="custom-content">
-                <h2>Calculadora IMC</h2>
-                <p>
-                    Apresento minha calculadora de IMC, criada com HTML, CSS e JavaScript. 
-                    Esta aplicação web permite que os usuários insiram seu peso e altura para 
-                    calcular seu Índice de Massa Corporal. 
-                </p>
-                <a href="https://github.com/KawannSouza/imc-calculator.git" target="_blank">Repositório</a>
-            </div>
-        </div>
-        <div class="custom-card">
-            <div class="img-box">
-                <img src="assets/images/lista-de-tarefas.png" alt="">
-            </div>
-            <div class="custom-content">
-                <h2>Lista de Tarefas</h2>
-                <p>
-                    Confira meu projeto de lista de tarefas, desenvolvido com Java, Swing e MySQL. 
-                    Esta aplicação desktop permite que os usuários criem, visualizem, editem e excluam 
-                    tarefas de maneira eficiente.
-                </p>
-                <a href="https://github.com/KawannSouza/to-do-list.git" target="_blank">Repositório</a>
-            </div>
-        </div>
-    </section>
+    <!--FOOTER-->
     <footer id="contact" class="contact">
         <div>
             <a href="https://www.instagram.com/kawann.ms/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
