@@ -1,0 +1,58 @@
+:root {
+    --white: #ffffff;
+    --blue-1: #031930;
+    --blue-2: #223A59;
+    --blue-3: #3684DB;
+    --blue-4: #B3D6F9;
+    --blue-5: #758BA5;
+}
+
+#hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 64px);
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+}
+
+#hero-content > p {
+    background: var(--blue-3);
+    color: var(--white);
+    padding: 0 .2rem;
+}
+
+#hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+#hero-image-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: var(--blue-3);
+    border-radius: 2rem;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(-15deg) scale(1.2);
+}
+
+#hero-image-container > img {
+    position: relative;
+    z-index: 0;
+    width: 320px;
+    border-radius: 20%;
+}

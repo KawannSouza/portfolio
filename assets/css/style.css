@@ -1,8 +1,14 @@
 @import "header.css";
+@import "hero-section.css";
 
 * {
     font-family: "Flow Rounded", system-ui;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
